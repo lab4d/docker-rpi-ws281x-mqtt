@@ -1,9 +1,10 @@
 # Control WS281x connected to the Raspberry Pi via MQTT
 
-Addon page: https://github.com/lab4d/HA-ws281x
+Addon page: https://github.com/lab4d/rpi-HA-ws281x
 
 For supported GPIOs please see [rpi-ws281x-python](https://github.com/rpi-ws281x/rpi-ws281x-python/blob/master/library/README.rst)
-Addon created based on this page: https://github.com/pilotak/docker-rpi-ws281x-mqtt
+
+Addon created based on this repository: https://github.com/pilotak/docker-rpi-ws281x-mqtt
 
 ## Environmental variables
 - `LED_GPIO` *(required)*
