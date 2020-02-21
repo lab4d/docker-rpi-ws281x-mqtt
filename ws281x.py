@@ -6,21 +6,21 @@ import json
 import _rpi_ws281x as ws
 import paho.mqtt.client as paho
 
-LED_GPIO       = os.getenv('LED_GPIO')
-LED_COUNT      = os.getenv('LED_COUNT') 
+LED_GPIO       = os.getenv('LED_GPIO', 18)
+LED_COUNT      = os.getenv('LED_COUNT', 2) 
 LED_CHANNEL    = os.getenv('LED_CHANNEL', 0)
 LED_FREQ_HZ    = os.getenv('LED_FREQ_HZ', 800000)
 LED_DMA_NUM    = os.getenv('LED_DMA_NUM', 10)
-LED_BRIGHTNESS = os.getenv('LED_BRIGHTNESS', 255)
+LED_BRIGHTNESS = os.getenv('LED_BRIGHTNESS', 55)
 LED_INVERT     = os.getenv('LED_INVERT', 0)
 
 MQTT_BROKER   = os.getenv('MQTT_BROKER', 'localhost')
-MQTT_USER     = os.getenv('MQTT_USER', None)
-MQTT_PASSWORD = os.getenv('MQTT_PASSWORD', None)
+MQTT_USER     = os.getenv('MQTT_USER', 'mqtt_username')
+MQTT_PASSWORD = os.getenv('MQTT_PASSWORD', 'mqtt_password')
 MQTT_PORT     = os.getenv('MQTT_PORT', 1883)
 MQTT_QOS      = os.getenv('MQTT_QOS', 1)
-MQTT_ID       = os.getenv('MQTT_ID', 'rpi-ws281x')
-MQTT_PREFIX   = os.getenv('MQTT_PREFIX', 'rpi-ws281x')
+MQTT_ID       = os.getenv('MQTT_ID', 'rpi-ws')
+MQTT_PREFIX   = os.getenv('MQTT_PREFIX', 'rpi-ws')
 MQTT_DISCOVERY_PREFIX = os.getenv('MQTT_DISCOVERY_PREFIX', 'homeassistant')
 
 MQTT_STATUS_TOPIC  = MQTT_PREFIX + "/alive"

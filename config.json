@@ -1,0 +1,14 @@
+{
+  "name": "RPi Neopixel - GPIO via MQTT",
+  "description": "Control WS281x LEDs connected to the RPi GPIO with Home Assistant via MQTT",
+  "version": "1",
+  "slug": "rpi-ws",
+  "gpio": "true",
+  "privileged": ["SYS_RAWIO"],
+  "devices": ["/dev/mem:/dev/mem:rwm"],
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "before",
+  "boot": "auto",
+  "options": {},
+  "schema": {}
+}
