@@ -1,6 +1,8 @@
 # Control WS281x connected to the Raspberry Pi GPIO via MQTT and Home Assistant
 
-Addon page: https://github.com/lab4d/rpi-HA-ws281x
+Add-on for Hass.io running on Raspberry Pi 
+
+Repository: https://github.com/lab4d/rpi-HA-ws281x
 
 For supported GPIOs please see [rpi-ws281x-python](https://github.com/rpi-ws281x/rpi-ws281x-python/blob/master/library/README.rst)
 
@@ -10,8 +12,8 @@ Addon created based on this repository: https://github.com/pilotak/docker-rpi-ws
 This does not work yet due to some permission issues i am still figuring out!
 
 ## Installation
-- copy the contents to /addons/rpi-ws directory
-- go to Supervisor/Add-on Store and it should appear under "Local Addons"
+- copy the contents to /addons/rpi-ws
+- go to Supervisor/Add-on Store and it should appear under "Local Add-ons"
 
 ## Environmental variables
 - `LED_GPIO` *(required)*
