@@ -1,4 +1,4 @@
-# Control WS281x connected to the Raspberry Pi via MQTT
+# Control WS281x connected to the Raspberry Pi GPIO via MQTT and Home Assistant
 
 Addon page: https://github.com/lab4d/rpi-HA-ws281x
 
