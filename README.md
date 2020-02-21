@@ -6,6 +6,13 @@ For supported GPIOs please see [rpi-ws281x-python](https://github.com/rpi-ws281x
 
 Addon created based on this repository: https://github.com/pilotak/docker-rpi-ws281x-mqtt
 
+## Warning
+This does not work yet due to some permission issues i am still figuring out!
+
+## Installation
+- copy the contents to /addons/rpi-ws directory
+- go to Supervisor/Add-on Store and it should appear under "Local Addons"
+
 ## Environmental variables
 - `LED_GPIO` *(required)*
 - `LED_COUNT` *(required)*
@@ -23,22 +30,6 @@ Addon created based on this repository: https://github.com/pilotak/docker-rpi-ws
 - `MQTT_PREFIX`  *(optional; default='rpi-ws281x')*
 - `MQTT_DISCOVERY_PREFIX` *(optional; default='homeassistant')*
 
-
-### `docker-compose.yml`
-```yaml
-version: "3.6"
-services:  
-  rpi_ws281x:
-    container_name: rpi_ws281x
-    restart: unless-stopped
-    image: pilotak/rpi-ws281x-mqtt
-    privileged: true
-    environment:
-      - LED_GPIO=12
-      - LED_COUNT=10
-```
-
-**This image is ready to be used in HomeAssistant - supports MQTT discovery, for all other purposes, please see topics used below**
 
 ## MQTT topics
 ### To set color
